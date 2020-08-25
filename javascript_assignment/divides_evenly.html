@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>division</title>
+</head>
+<body>
+    <p id="one"></p>
+    <p id="two"></p>
+
+    <script>
+        function DivideEvenly(a,b)
+        {
+            var num = a/b;
+            var  number = document.getElementById("two").innerHTML = "98/7 =" + num;
+
+            if(num % 2 == 0 )
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        var divideEven =  DivideEvenly(98,7);
+        divideEven = document.getElementById("one").innerHTML = " DivideEvenly(98,7) => " + divideEven;
+        
+    </script>
+</body>
+</html>

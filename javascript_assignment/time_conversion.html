@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time_conversion</title>
+</head>
+<body>
+    <p id="one"></p>
+    <p id="two"></p>
+    <p id="three"></p>
+    <script>
+        function ConvertMinToSec(minutes){
+            return Math.floor(minutes*60); 
+        }
+        var mintosec =  ConvertMinToSec(5);
+        var mintosec1 = ConvertMinToSec(3);
+        var mintosec2 = ConvertMinToSec(2);
+        mintosec = document.getElementById("one").innerHTML = " 5 minutes = " + mintosec + " Second";
+        mintosec = document.getElementById("two").innerHTML = " 3 minutes = " + mintosec1 + " Second";
+        mintosec = document.getElementById("three").innerHTML = " 2 minutes = " + mintosec2 + " Second";
+        
+    </script>
+</body>
+</html>
